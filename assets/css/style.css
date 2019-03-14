@@ -1,0 +1,194 @@
+:root {
+  --containerInitPadding: 50px;
+  --headerColor: rgb(24, 24, 24);
+  --headerHeight: 70px;
+  --color1: rgb(104, 173, 211);
+}
+body,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a:hover{
+    cursor: pointer;
+    filter:grayscale(100%);
+}
+.pageHeader {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+
+  align-items: center;
+  background: var(--headerColor);
+  height: var(--headerHeight);
+  padding: 0 var(--containerInitPadding) 0 var(--containerInitPadding);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  justify-content: space-between;
+}
+.headerTitle {
+  display: flex;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.icons {
+  display: flex;
+  box-sizing: border-box;
+  width: 80px;
+  justify-content: space-between;
+}
+#fb{
+    background-image: url("../images/facebook.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+#insta{
+    background-image: url("../images/insta.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.socialIcon {
+    /* display:flex;
+    box-sizing: border-box;
+    flex-grow: 0;
+    flex-shrink: 0; */
+    width: 30px;
+    height: 30px;
+  }
+.belowHeader {
+  display: flex;
+  position: relative;
+  top: var(--headerHeight);
+  flex-direction: column;
+  top: var(--headerHeight);
+  width: 100%;
+  overflow: scroll;
+  z-index: 5;
+}
+.container,
+.about {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100vw;
+  min-height: calc(100vh - var(--headerHeight));
+  height: auto;
+  padding: 50px var(--containerInitPadding) 0 var(--containerInitPadding);
+  background-color: var(--color1);
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+}
+.kg-logo{
+  position: absolute;
+  top:30px;
+  left:150px;
+  width:600px;
+  height:450px;
+
+}
+.container {
+  background-image: url("../images/sunset.jpg");
+  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: -200px;
+
+}
+.portrait {
+  border: 1px solid var(--color1);
+  border-radius: 200px;
+  overflow-x: hidden;
+}
+p {
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+.aboutDescription {
+  width: 65%;
+  text-align: center;
+  color: white;
+  line-height: 1.5em;
+  font-size: 15px;
+  padding: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+.process {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: calc(100vh - var(--headerHeight));
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.processDescription {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 80px 20px 80px;
+  width: 50%;
+  height: 100%;
+  background: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.brickPic {
+  width: 50%;
+  height: 100%;
+  background-image: url("../images/brick.jpg");
+  background-size: cover;
+}
+.processTitle {
+  color: var(--color1);
+  font-size: 30px;
+}
+.processSubheader {
+  color: var(--headerColor);
+  font-size: 20;
+  margin-top: 10px;
+}
+.processDescription {
+  font-size: 15;
+  margin-top: 10px;
+  line-height: 1.7em;
+}
+.googleMap {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - var(--headerHeight));
+  background-color: var(--color1);
+}
+#map {
+  height: 80%;
+  width: 90%;
+}
+.bottomContactInfo {
+  margin-top: 30px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

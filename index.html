@@ -1,0 +1,231 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Kevin Gerspach</title>
+  </head>
+  <body>
+    <header class="pageHeader">
+      <div class="headerTitle">
+        Kevin Gerspach | The Corcoran Group
+      </div>
+      <div class = "icons">
+          <a class="socialIcon" id="fb" href="https://www.facebook.com/kevingerspachnyc/"target="blank"></a>
+          <a class="socialIcon" id="insta" href="https://www.instagram.com/kevingerspach/" target="blank"></a>
+      </div>
+    </header>
+    <div class="belowHeader">
+      <div class="container"></div>
+      <div class="about">
+        <div class="portrait">
+          <img src="assets/images/portrait.jpg" width="400px" height="400px" />
+          <img class = "kg-logo"src="assets/images/kglogo.PNG">
+
+        </div>
+        <div class="aboutDescription">
+          <h2>
+            About Kevin
+          </h2>
+          <p>
+            Kevin’s clients can count having a smart, efficient agent on their
+            side who is knowledgeable of the relevant markets, and understands
+            very well how to work and interact with others.
+          </p>
+          <p>
+            “Trustworthiness is the most important thing to me,” he says. “I
+            want every client to feel confident that I am fully dedicated to
+            their needs, and will work tirelessly on their behalf to help them
+            get the home and value they deserve.”
+          </p>
+          <p>
+            Kevin is extremely pleasant to work with and an eloquent
+            communicator. He is further appreciated for his honest approach,
+            keen attention to detail, and great client service. With a
+            background in law, he possesses strong analytical and advocacy
+            skills as well, which are invaluable assets for navigating and
+            negotiating real estate transactions.
+          </p>
+          <p>
+            This native of Garden City, Long Island studied Political Science at
+            Penn State University and went on to graduate from St. John’s
+            University School of Law. Kevin worked at a title insurance company
+            prior to and during law school, and then for a civil litigation firm
+            in downtown Manhattan. He lives in the Upper East Side, and
+            specializes in residential sales and rentals in all Manhattan
+            neighborhoods, from Tribeca and Flatiron to the Upper West Side and
+            beyond.
+          </p>
+          <p>
+            On the personal side, music is his passion. Kevin plays guitar and
+            writes songs. He also loves history and travel. Volunteering means a
+            lot to him, and he tries to get involved as much as possible by
+            giving blood, donating to various charities, and participating in
+            fundraisers. Kevin has been a Big Brother the past two years which
+            has been particularly rewarding.
+          </p>
+        </div>
+      </div>
+      <div class="process">
+        <div class="processDescription">
+          <p class="processTitle">
+            The Selling Process
+          </p>
+          <p class="processSubheader">
+            Sell It Quick. Sell It Smart.
+          </p>
+          <P class="processBody">
+            I will help you prepare, price, and market your property. I work
+            hard for my clients and guarantee quality service and
+            professionalism. You can count on me to be transparent and honest
+            every step of the process. I’ll show your space to qualified buyers
+            and skillfully negotiate on your behalf to secure the best price and
+            the quickest closing.
+          </P>
+        </div>
+        <div class="brickPic"></div>
+      </div>
+      <div class="googleMap">
+        <div id="map"></div>
+        <div class="bottomContactInfo">
+          <p>kevin.gerspach@corcoran.com</p>
+          <p>(516) 551-0347</p>
+          <p>30 Irving Place, New York, NY 10003</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      let map;
+      let office = { lat: 40.73502, lng: -73.987749 };
+      let roadColor = "#292929";
+      let localeColor = "#68add3";
+      let localeOutline = "#161616";
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: office,
+          zoom: 14,
+          styles: [
+            { elementType: "geometry", stylers: [{ color: "#212121" }] },
+            {
+              elementType: "labels.text.stroke",
+              stylers: [{ color: localeOutline }]
+            },
+            {
+              elementType: "labels.text.fill",
+              stylers: [{ color: localeColor }]
+            },
+            {
+              featureType: "administrative.locality",
+              elementType: "labels.text.fill",
+              stylers: [{ color: localeColor }]
+            },
+            {
+              featureType: "poi.park",
+              elementType: "geometry",
+              stylers: [{ color: "#139664" }]
+            },
+            {
+              featureType: "road",
+              elementType: "geometry",
+              stylers: [{ color: roadColor }]
+            },
+            {
+              featureType: "road",
+              elementType: "geometry.stroke",
+              stylers: [{ color: roadColor }]
+            },
+            {
+              featureType: "road.highway",
+              elementType: "geometry",
+              stylers: [{ color: roadColor }]
+            },
+            {
+              featureType: "road.highway",
+              elementType: "geometry.stroke",
+              stylers: [{ color: roadColor }]
+            },
+            {
+              featureType: "water",
+              elementType: "geometry",
+              stylers: [{ color: localeOutline }]
+            },
+            {
+              featureType: "water",
+              elementType: "labels.text.fill",
+              stylers: [{ color: localeColor }]
+            },
+            {
+              featureType: "water",
+              elementType: "labels.text.stroke",
+              stylers: [{ color: localeOutline }]
+            },
+            {
+              featureType: "road.highway",
+              elementType: "labels",
+              stylers: [{ color: "#427c46" }, { visibility: "off" }]
+            },
+            {
+              featureType: "transit.station",
+              elementType: "labels",
+              stylers: [{ color: "#427c46" }, { visibility: "off" }]
+            },
+            {
+              featureType: "transit.station",
+              elementType: "labels.text.stroke",
+              stylers: [{ color: "#427c46" }, { visibility: "off" }]
+            },
+            {
+              featureType: "road",
+              elementType: "labels.text.fill",
+              stylers: [{ color: "#427c46" }, { visibility: "off" }]
+            },
+            {
+              featureType: "road",
+              elementType: "labels.text.stroke",
+              stylers: [{ color: "#427c46" }, { visibility: "off" }]
+            },
+            {
+              featureType: "poi",
+              elementType: "labels",
+              stylers: [{ color: "#427c46" }, { visibility: "off" }]
+            },
+            {
+              featureType: "poi",
+              elementType: "labels.text.stroke",
+              stylers: [{ color: "#427c46" }, { visibility: "off" }]
+            },
+            {
+              featureType: "poi.park",
+              elementType: "labels.text.fill",
+              stylers: [{ color: "#427c46" }, { visibility: "off" }]
+            },
+            {
+              featureType: "poi.park",
+              elementType: "labels.text.stroke",
+              stylers: [{ color: "#427c46" }, { visibility: "off" }]
+            }
+          ]
+        });
+        var marker = new google.maps.Marker({
+          position: office,
+          map: map,
+          label: { color: "#ffffff", text: "KG" }
+        });
+      }
+    </script>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApzP8rWQSB-KGOrERNOAhbn8B2pd8G8WU&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>
